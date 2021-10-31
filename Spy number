@@ -1,0 +1,26 @@
+def checkSpy(num):
+    sums = 0
+    product = 1
+    while num>0:
+        digit = num % 10
+         
+        # getting the
+        # sum of digits
+        sums = sums + digit
+         
+        # getting the product
+        # of digits
+        product = product * digit
+        num = num // 10
+         
+    if sums == product:
+        return True
+    else:
+        return False
+ 
+# Driver Code
+num = 1412
+if (checkSpy(num)):
+    print("The number is a Spy Number")
+else:
+    print("The number is NOT a spy number")
